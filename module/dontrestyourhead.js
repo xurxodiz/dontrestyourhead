@@ -1,14 +1,14 @@
 // Import Modules
-import { DontRestYourHeadActor } from "./actor/actor.js";
-import { DontRestYourHeadActorSheet } from "./actor/actor-sheet.js";
-import { DontRestYourHeadItem } from "./item/item.js";
-import { DontRestYourHeadItemSheet } from "./item/item-sheet.js";
+import { DRYHActor } from "./actor/actor.js";
+import { DRYHActorSheet } from "./actor/actor-sheet.js";
+import { DRYHItem } from "./item/item.js";
+import { DRYHItemSheet } from "./item/item-sheet.js";
 
 Hooks.once('init', async function() {
 
   game.dontrestyourhead = {
-    DontRestYourHeadActor,
-    DontRestYourHeadItem
+    DRYHActor,
+    DRYHItem
   };
 
   /**
@@ -21,14 +21,14 @@ Hooks.once('init', async function() {
   };
 
   // Define custom Entity classes
-  CONFIG.Actor.entityClass = DontRestYourHeadActor;
-  CONFIG.Item.entityClass = DontRestYourHeadItem;
+  CONFIG.Actor.entityClass = DRYHActor;
+  CONFIG.Item.entityClass = DRYHItem;
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("dontrestyourhead", DontRestYourHeadActorSheet, { makeDefault: true });
+  Actors.registerSheet("dontrestyourhead", DRYHActorSheet, { makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("dontrestyourhead", DontRestYourHeadItemSheet, { makeDefault: true });
+  Items.registerSheet("dontrestyourhead", DRYHItemSheet, { makeDefault: true });
 
   // If you need to add Handlebars helpers, here are a few useful examples:
   Handlebars.registerHelper('concat', function() {
