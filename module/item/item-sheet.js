@@ -7,7 +7,7 @@ export class DRYHItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["dont-rest-your-head", "sheet", "item"],
+      classes: ["dontrestyourhead", "sheet", "item"],
       width: 520,
       height: 480,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
@@ -16,7 +16,7 @@ export class DRYHItemSheet extends ItemSheet {
 
   /** @override */
   get template() {
-    const path = "systems/dont-rest-your-head/templates/item";
+    const path = "systems/dontrestyourhead/templates/item";
     // Return a single sheet for all item types.
     return `${path}/item-sheet.html`;
     // Alternatively, you could use the following return statement to do a

@@ -7,8 +7,8 @@ export class DRYHActorSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["dont-rest-your-head", "sheet", "actor"],
-      template: "systems/dont-rest-your-head/templates/actor/actor-sheet.html",
+      classes: ["dontrestyourhead", "sheet", "actor"],
+      template: "systems/dontrestyourhead/templates/actor/actor-sheet.html",
       width: 600,
       height: 600,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]

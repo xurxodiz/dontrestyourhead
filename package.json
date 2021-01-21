@@ -1,7 +1,7 @@
 {
-  "name": "dont-rest-your-head",
+  "name": "dontrestyourhead",
   "version": "1.0.0",
-  "description": "CSS compiler for the Don&#39;t rest your head system",
+  "description": "CSS compiler for the Don&#39;t Rest Your Head system",
   "scripts": {
     "build": "gulp",
     "compile": "gulp css",
@@ -11,7 +11,7 @@
   "browserslist": [
     "last 3 versions"
   ],
-  "author": "Jorge Diz &amp; Salvador Perez",
+  "author": "Salva Pérez &amp; Jorge Diz",
   "license": "MIT",
   "private": true,
   "dependencies": {
