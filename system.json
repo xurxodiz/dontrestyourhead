@@ -1,0 +1,29 @@
+{
+  "name": "dont-rest-your-head",
+  "title": "Don&#39;t rest your head",
+  "description": "The Don&#39;t rest your head system for FoundryVTT!",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.7.5",
+  "compatibleCoreVersion": "0.7.9",
+  "templateVersion": 2,
+  "author": "Jorge Diz &amp; Salvador Perez",
+  "esmodules": ["module/dont-rest-your-head.js"],
+  "styles": ["css/dont-rest-your-head.css"],
+  "scripts": [],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt"
+}
