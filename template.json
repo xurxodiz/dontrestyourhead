@@ -1,6 +1,6 @@
 {
   "Actor": {
-    "types": ["character"],
+    "types": ["character", "badman"],
     "templates": {
       "base": {
         "health": {
@@ -42,6 +42,17 @@
         "cha": {
           "value": 10
         }
+      }
+    },
+    "badman": {
+      "templates": [],
+      "looks": {
+        "eyes": "",
+        "mouth": "",
+        "voice": "",
+        "hands": "",
+        "clothes": "",
+        "feet": ""
       }
     }
   },

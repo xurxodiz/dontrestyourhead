@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@400;800&family=Roboto:wght@300;400;500&display=swap");
 /* Global styles */
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Special+Elite&display=swap");
 .window-app {
   font-family: "Roboto", sans-serif;
 }
@@ -245,4 +246,60 @@
   -ms-flex: 0 0 86px;
   flex: 0 0 86px;
   text-align: right;
+}
+
+.badman .window-content {
+  padding: 0 20px;
+  background: url("../uri/darkbg.png") repeat;
+  color: #eee;
+  font-family: 'Gochi Hand', sans-serif;
+}
+
+.badman .sheet-header {
+  max-height: 150px;
+}
+
+.badman .sheet-header img {
+  border: none;
+}
+
+.badman .sheet-header h1.charname {
+  font-family: 'Special Elite', serif;
+  margin-left: 10px;
+}
+
+.badman .sheet-header h1 input {
+  border: none;
+  color: #eee;
+  text-transform: uppercase;
+  background-color: inherit;
+}
+
+.badman.sheet nav.sheet-tabs {
+  display: none;
+  border: none;
+}
+
+.badman.sheet nav.sheet-tabs.tabs {
+  border: none;
+}
+
+.badman .sheet-tabs > .item.active {
+  text-decoration: none;
+}
+
+.badman .sheet-tabs > .item,
+.badman .sheet-body > .tab > p {
+  font-size: 1.8em;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.badman .sheet-body .tab .editor {
+  height: 100px;
+}
+
+.badman .sheet-body .tab .editor p {
+  font-size: 1.4em;
+  text-transform: lowercase;
 }

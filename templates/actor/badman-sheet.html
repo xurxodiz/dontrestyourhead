@@ -1,0 +1,41 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+    {{!-- Sheet Header --}}
+    <header class="sheet-header">
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder='{{ localize "DRYH.Badman.Badman" }}'/></h1>
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="looks">{{ localize "DRYH.Badman.HisLooks" }}</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        <div class="tab looks" data-group="primary" data-tab="looks">
+            <p>{{ localize "DRYH.Badman.HisEyes" }}</p>
+            {{editor content=data.looks.eyes target="data.looks.eyes" button=true owner=owner editable=editable}}
+
+            <p>{{ localize "DRYH.Badman.HisMouth" }}</p>
+            {{editor content=data.looks.mouth target="data.looks.mouth" button=true owner=owner editable=editable}}
+
+            <p>{{ localize "DRYH.Badman.HisVoice" }}</p>
+            {{editor content=data.looks.voice target="data.looks.voice" button=true owner=owner editable=editable}}
+
+            <p>{{ localize "DRYH.Badman.HisHands" }}</p>
+            {{editor content=data.looks.hands target="data.looks.hands" button=true owner=owner editable=editable}}
+
+            <p>{{ localize "DRYH.Badman.HisClothes" }}</p>
+            {{editor content=data.looks.clothes target="data.looks.clothes" button=true owner=owner editable=editable}}
+
+            <p>{{ localize "DRYH.Badman.HisFeet" }}</p>
+            {{editor content=data.looks.feet target="data.looks.feet" button=true owner=owner editable=editable}}
+        </div>
+
+    </section>
+</form>
+
