@@ -1,0 +1,9 @@
+# IDE files
+.idea
+
+# Reference files
+node_modules
+
+# Generated files
+.sass-cache
+.DS_Store
