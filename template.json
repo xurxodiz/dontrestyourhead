@@ -1,6 +1,6 @@
 {
   "Actor": {
-    "types": ["character", "badman"],
+    "types": ["character", "adult", "kid", "badman"],
     "templates": {
       "base": {
         "health": {
@@ -13,6 +13,36 @@
           "min": 0,
           "max": 5
         }
+      },
+      "pc": {
+        "iam": "",
+        "stats": {
+          "discipline": {
+            "value": 3,
+            "min": 0,
+            "max": 3
+          },
+          "madness": {
+            "value": 0,
+            "min": 0,
+            "max": 6
+          },
+          "exhaustion": {
+            "value": 0,
+            "min": 0,
+            "max": 6
+          },
+          "fight": {
+            "value": 0,
+            "min": 0,
+            "max": 3
+          },
+          "flight": {
+            "value": 0,
+            "min": 0,
+            "max": 3
+          }
+        },
       }
     },
     "character": {
@@ -44,6 +74,32 @@
         }
       }
     },
+    "adult": {
+      "templates": ["pc"],
+      "biography": {
+        "keepingAwake": "",
+        "justHappened": "",
+        "onSurface": "",
+        "liesBeneath": "",
+        "yourPath": ""
+      }
+    },
+    "kid": {
+      "templates": ["pc"],
+      "biography": {
+        "cantSleep": "",
+        "justHappened": "",
+        "otherKids": "",
+        "homeLike": "",
+        "deservePunished": "",
+        "wishStar": ""
+      },
+      "stats": {
+        "exhaustion": {
+          "value": 2
+        }
+      },
+    },
     "badman": {
       "templates": [],
       "looks": {
@@ -57,7 +113,7 @@
     }
   },
   "Item": {
-    "types": ["item"],
+    "types": ["item", "talent"],
     "templates": {
       "base": {
         "description": ""
@@ -67,6 +123,19 @@
       "templates": ["base"],
       "quantity": 1,
       "weight": 0
+    },
+    "pcExhaustion": {
+      "templates": ["talent"]
+    },
+    "adultMadness": {
+      "templates": ["talent"]
+    },
+    "kidMadness": {
+      "templates": ["talent"],
+      "object": "",
+      "dice12": "",
+      "dice34": "",
+      "dice56": ""
     }
   }
 }

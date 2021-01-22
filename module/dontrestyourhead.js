@@ -1,6 +1,7 @@
 // Import Modules
 import { DRYHActor } from "./actor/actor.js";
 import { DRYHActorSheet } from "./actor/actor-sheet.js";
+import { DRYHKidSheet } from "./actor/kid-sheet.js";
 import { DRYHBadmanSheet } from "./actor/badman-sheet.js";
 import { DRYHItem } from "./item/item.js";
 import { DRYHItemSheet } from "./item/item-sheet.js";
@@ -28,6 +29,7 @@ Hooks.once('init', async function() {
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("dontrestyourhead", DRYHActorSheet, { types: ["character"], makeDefault: true });
+  Actors.registerSheet("dontrestyourhead", DRYHKidSheet, { types: ["kid"], makeDefault: true });
   Actors.registerSheet("dontrestyourhead", DRYHBadmanSheet, { types: ["badman"], makeDefault: true  });
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("dontrestyourhead", DRYHItemSheet, { makeDefault: true });
