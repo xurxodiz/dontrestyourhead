@@ -113,7 +113,7 @@
     }
   },
   "Item": {
-    "types": ["item", "talent"],
+    "types": ["item", "exhaustion", "madness"],
     "templates": {
       "base": {
         "description": ""
@@ -124,15 +124,14 @@
       "quantity": 1,
       "weight": 0
     },
-    "pcExhaustion": {
-      "templates": ["talent"]
+    "exhaustion": {
+      "templates": [],
+      "description": ""
     },
-    "adultMadness": {
-      "templates": ["talent"]
-    },
-    "kidMadness": {
-      "templates": ["talent"],
+    "madness": {
+      "templates": [],
       "object": "",
+      "description": "",
       "dice12": "",
       "dice34": "",
       "dice56": ""
